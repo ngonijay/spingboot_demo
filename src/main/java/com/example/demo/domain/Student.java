@@ -31,7 +31,6 @@ public class Student {
     private String lastName;
     private LocalDate dateOfBirth;
     private String academicLevel;
-    private String section;
     private String contactNumber;
     private String contactPerson;
     private String contactPersonNumber;
