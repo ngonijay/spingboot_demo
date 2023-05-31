@@ -1,5 +1,6 @@
 package com.example.demo.students;
 
+import com.example.demo.domain.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -51,7 +52,7 @@ public class StudentService {
 
         Student student = studentsRepository.findById(studentId).orElseThrow(() -> new IllegalStateException("student with id" + studentId));
 
-        student.setName(name);
+        student.setFirstName(name);
         student.setEmail(email);
     }
 }
