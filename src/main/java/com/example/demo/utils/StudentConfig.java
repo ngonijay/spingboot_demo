@@ -1,6 +1,7 @@
-package com.example.demo.students;
+package com.example.demo.utils;
 
 import com.example.demo.domain.Student;
+import com.example.demo.repository.StudentsRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -8,9 +9,8 @@ import org.springframework.context.annotation.Configuration;
 import java.time.LocalDate;
 import java.util.List;
 
-@Configuration
 public class StudentConfig {
-    @Bean
+   /* @Bean
     CommandLineRunner commandLineRunner(StudentsRepository studentsRepository) {
         return args -> {
             Student mariam = Student.builder()
@@ -43,5 +43,5 @@ public class StudentConfig {
             studentsRepository.saveAll(List.of(mariam, alex));
 
         };
-    }
+    }*/
 }
